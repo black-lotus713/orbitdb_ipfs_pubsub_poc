@@ -1,4 +1,4 @@
-# orbitdb_ipfs_pubsub_poc
+# orbitdb_ipfs_pubsub_poc_database
 Proof of concept app for creating a central orbitdb instance to publish and ipfs pubsub feed that client apps can call to get new hashes to pin. A server side autopinner would be pushing hashes to this db as it grabs/pins content.
 
 With NodeJS installed, make a directory and run:
