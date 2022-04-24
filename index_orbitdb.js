@@ -18,15 +18,13 @@ const ipfsOptions = {
 //identity for OrbitDB instance
 const options = { id: 'GTW_Feed' }
 
-
-
 async function main() {
     const ipfs = await IPFS.create(ipfsOptions)
     const identity = await Identities.createIdentity(options)
     const orbitdb = await OrbitDB.createInstance(ipfs, { identity: identity})
-    const db = await orbitdb.feed('GTWFeed.posts')
 
-    const address = db.address.toString()
+    //creates a database instance of type Feed named "posts" on the "GTWFeed" orbitDB instance
+    const db = await orbitdb.feed('GTWFeed.posts')
 
     app.get('/list', (req, res) => {
         var results = {}
