@@ -1,0 +1,15 @@
+{
+  "name": "orbitdb_pinstream_poc",
+  "version": "1.0.0",
+  "description": "Proof of concept for using OrbitDB to act as a pubsub feed for GTW pins",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test"
+  },
+  "author": "Patrick Sheehan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "orbit-db": "^0.28.3"
+  }
+}
